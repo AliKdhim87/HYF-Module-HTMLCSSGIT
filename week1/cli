@@ -1,0 +1,8 @@
+
+
+1-First I make the folder with (mkdir folder name) then I write this (attrib +h folder name).
+When you make the folder visible again (attrib -h folder name)
+2- Create multiple nested directories (mkdir HYF/myusername/these/folders/are/just/for/fun)
+3- How do I append a message to a file, without a newline character. First I make the fille 
+(PS C:\Users\HP\Ali> echo 'first message' > 'New Text Document.txt') then I write this 
+(PS C:\Users\HP\Ali> echo 'sconde message' >> 'New Text Document.txt')

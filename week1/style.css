@@ -1,0 +1,416 @@
+/* reset to default */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* gobal global rules */
+
+body {
+    background-color: #000;
+}
+
+
+/* grid system */
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    width: 1400px;
+    margin: auto;
+    border: 1px solid #29F2C2;
+    padding: 2em;
+    background-color: #262626;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+/* Section experience */
+
+.experience {
+    padding: 2em;
+    position: relative;
+}
+
+.experience .title-exp {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 2em
+}
+
+.experience .title-exp::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    top: 83px;
+    left: 34px;
+}
+
+.experience .work {
+    color: rgb(189, 186, 186);
+    padding-bottom: 20px;
+}
+
+.experience ul li {
+    color: #999;
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+/* Start Skills */
+
+.skills {
+    padding: 20px;
+    position: relative;
+    margin-top: 15px
+}
+
+.skills .title-skills {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+.skills .title-skills::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    top: 164px;
+    left: 66px;
+}
+
+.skills .skills-content {
+    display: flex;
+    padding: 20px;
+}
+
+.skills .skills-content .info-left {
+    width: 40%
+}
+
+.skills .skills-content .info-left .my-skills {
+    list-style-type: none;
+}
+
+.skills .skills-content .info-left .my-skills li:first-child {
+    margin-top: 25px
+}
+
+.skills .skills-content .info-left .my-skills li {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #999;
+}
+
+.skills .skills-content .progress-right {
+    width: 50%;
+}
+
+.skills .skills-content .progress-right progress {
+    margin-bottom: 17px;
+}
+
+.skills .skills-content .progress-right .html {
+    width: 350px;
+    height: 2rem;
+    background: #232323;
+    border-radius: 1.5em;
+    color: black;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.skills .skills-content .progress-right .html::before {
+    content: attr(data-lable);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    bottom: .5em;
+    width: calc(var(--width, 0) * 1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    background: #29F2C2;
+    border-radius: 1em;
+    padding: .5em
+}
+
+
+/* start about */
+
+.about {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    background: #29F2C2;
+    width: 3px;
+    height: 263%;
+    bottom: 0;
+    top: 46px;
+    left: 100%;
+}
+
+.about .about-img {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 3rem
+}
+
+.about .about-img .my-img {
+    width: 100%;
+    padding: 2px;
+    border-radius: 50%;
+    border: 5px solid #29F2C2;
+}
+
+.about .about-content h1 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px
+}
+
+.about .about-content span {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(189, 186, 186);
+    padding: 10px
+}
+
+.about .contact {
+    display: flex;
+    padding: 30px;
+}
+
+.about .left {
+    width: 50%;
+}
+
+.about .right {
+    width: 50%
+}
+
+.about .left li,
+.about .right li {
+    color: #999;
+    font-size: 18px;
+    padding: 5px
+}
+
+
+/* Start section intereste */
+
+.intereste {
+    padding: 2em;
+    position: relative;
+}
+
+.intereste .title-inter {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.intereste .title-inter::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    top: 83px;
+    left: 34px;
+}
+
+.intereste .intereste-content {
+    text-align: center;
+    margin-top: 3rem
+}
+
+.intereste .intereste-content i {
+    margin-right: 20px;
+    font-size: 3rem;
+    color: #29F2C2
+}
+
+
+/* start section profile */
+
+.profile {
+    padding: 1em;
+    position: relative;
+}
+
+.profile .title-prof {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+    letter-spacing: 3px;
+}
+
+.profile .title-prof::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    bottom: 0;
+    left: 16px;
+    top: 62px
+}
+
+.profile p {
+    font-size: 18px;
+    color: #999
+}
+
+
+/* Start section languages */
+
+.languages {
+    padding: 1em;
+    position: relative;
+}
+
+.languages .title-lang {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.languages .title-lang::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    bottom: 0;
+    left: 16px;
+    top: 62px
+}
+
+.languages .lang-content {
+    padding: 1em;
+    margin: 20px 0;
+    color: #999;
+}
+
+.languages .lang-content>span {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+
+/* Start section education */
+
+.education {
+    padding: 1em;
+    position: relative;
+}
+
+.education .educ-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.education .educ-title::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    top: 61px;
+    left: 18px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 100%;
+    color: #999
+}
+
+td,
+th {
+    border: 1px solid #29F2C2;
+    text-align: left;
+    padding: 8px;
+}
+
+tr td a {
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+
+
+/* Start dection social media */
+
+.social {
+    position: relative;
+    padding: 1em;
+}
+
+.social .title-social {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.social .title-social::after {
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 4px;
+    background: #29F2C2;
+    top: 61px;
+    left: 18px;
+}
+
+.social .social-content {
+    text-align: center;
+    margin-top: 3rem
+}
+
+.social .social-content a {
+    margin-right: 20px;
+    font-size: 3rem;
+    color: #29F2C2;
+    text-decoration: none
+}
